@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!--
+This i the file with notes and comments which would be useful coz I'm learning and making a project side by side. :D
+CLASSES < IDS
+    CLASSES > NORMAL( inherits properties of the class mentioned  in the latter)
+    IDS     > NORMAL
+    CLASS1  Vs CLASS2 ( inherits properties of the class mentioned  in the latter)
+    if type_elements(Class1) < type_elements(Class2): INHERITED -> CLASS2
+    if type_elements(Class1) = type_elements(Class2): INHERITED -> CLASS2
+    if type_elements(Class1) > type_elements(Class2): INHERITED -> COMMON THINGS FROM CLASS 2 AND EXTRA FROM CLASS 1
+    CLASS > UNIVERSAL( inherits properties of the class mentioned  in the latter)
+    when a class functions as an ID, it always WINS
+    The universal selector and inherited selectors have a specificity of (0, 0), (0, 0).
+    RULES:
+   1. Inline style (inside an HTML element)
+   2.External and internal style sheets (in the head section)
+   3.Browser default
+
+
+  SOME PRACTICE
+1.<img src = "link"  alt = "TEXT"  style = "float:center ;width : 128px; height : 128px;">
+2.->a:hover{background-color:blue;}
+->LVHA (:link, :visited, :hover, :active)
+<a href = "link" alt = "TEXT" target = blank>TEXT </a>
+ OR
+ instead of TEXT put  img
+3.style = "border : 2px solid aqaumarine; border-style : dotted;" #THICKNESS SOLID COLOUR
+#note - no commas
+border-style : groove/inset/double/outset;
+border-top-style :  groove/inset/double/outset;
+
+4.img{border-radius: 2px;
+    opacity : 0.5;
+    padding :  5px;
+    height : auto;
+    width: 100%;}
+5.img:hover{transform:scaleX(-1);
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5)} #thickness + GLOW COORD + COLOR
+
+6. <link rel = "stylesheet" href = "mystyle.css">
+7.body{background-image : url("LINK");
+       background-repeat : no-repeat/ repeat-x;
+       margin-left:200px;
+       background-position : right bottom} #dir + top/bottom;
+       background-attachment :fixed/scroll;}
+  GROUPED ORDER
+ background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+
+8.p{margin-top:12px;
+    margin-right: 23px;
+    margin-bottom: 30px;
+    margin:left:21px;} #SHORTHAND-keep 'em all together
+    OR   margin: auto;    # The element will then take up the specified width,
+    and the remaining space will be split equally between the left and right margins:
+    OR margin : inherit;
+
+9.SAME THING FOR PADDING
+****WIDTH IS IMP
+if you want the  box to retain its width as its border same irrespective of the padding ; u use box-sizing
+div{box-sizing: border-box;}
+
+
+
+
+9.<img src  = "https://wallpaperaccess.com/full/411188.jpg" alt = "INTRODUCTION TO ART">
+10. overflow: hidden;
+display: inline-block;
+    text-align : center;
+    AND
+ ==>.topnav a{}
+
+11.eg:<HR size=5px width =”75%” color=”blue” align=”center”>
+
+12.span{display : none/visible/inline/block;}
+OR
+span{visibility:hidden;}
+
+13. @media only screen and (max-width : 700px)
+Media queries and only screen =  prevents old browser from using this effect
+
+14 .clearfix{overflow : auto;} # to adjust the overflow
+
+15.position: absolute;
+ left : 0px;
+ right : 150px;
+ -> With absolute positioning, an element can be placed anywhere on a page.
+
+16.-webkit = IOS WEB BROWSERS
+-->
+
+</html>
