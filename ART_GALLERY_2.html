@@ -282,6 +282,57 @@
       opacity: 1;}
 
     *{font-family: Georgia, serif;}
+
+    .upd-container{
+      position : absolute;
+      top : 230px;
+      right : 40px;
+      float : right;
+      width: 25%;
+      margin : 20px 10px 10px 30px;
+      padding : 10px ;
+      background-color : white;
+      border : 2px transparent black;
+      border-radius:4px;
+      }
+
+    .upd-sbox{
+    width : 300px;
+    text-color : grey;
+    text-style : bold;
+    background-color : rgba(35,218,168,100);
+    padding : 10px ;
+    margin : 10px 0;
+    display : inline-block;
+    text-align : center;
+    text-decorations:none;
+    border : 2px transparent black;
+    border-radius:4px;
+    }
+
+    .upd-bbox{
+    width : 300px;
+
+    text-color : black;
+    text-style : bold;
+    background-color : rgba(63,17,153,100);
+    padding : 10px ;
+    margin :  10px 0;
+    display : inline-block;
+    text-align : center;
+    text-decorations:none;
+    border : 2px transparent black;
+    border-radius:4px;}
+
+
+
+    .fakeimg{
+    margin : 0 0 0 12px;
+    width:250px;
+    padding : 10px;
+    background : #aaa;
+    }
+
     </style>
 
 
@@ -296,7 +347,7 @@
         <span><a class = "a2" style = "position : absolute; top : 12.99%; right :90px; width : 240px; text-align :center;"  href = "https://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200" target = "blank">AMAZING ART DESIGN</a></span>
     </div>
 
-
+    <div class="row">
     <div class = "column side">
     <div class="container">
       <div class="mySlides">
@@ -336,7 +387,7 @@
         <p id="caption"></p>
       </div>
 
-      <div class="row">
+
         <div class="column1">
           <img class="demo cursor" style = "position : absolute;  left : 0px;" src="img_woods_wide.jpg" onclick="currentSlide(1)"   alt="The Woods">
         </div>
@@ -358,44 +409,31 @@
       </div>
     </div>
     <h2 style="text-align:left; float : left; padding : 5px 4px; position : absolute; top : 800px; left : 230px;">Masterpieces</h2>
+     <time datetime="2021-4" style="text-align:left; float : left; padding : 5px 4px; position : absolute; top : 850px; left : 230px;">April 2021</time>
+
+    <div class = "upd-container">
+        <div class = "upd-sbox">
+            <p> UPDATES...</p>
+        </div>
+        <div class = "upd-bbox">
+            <div class = "fakeimg" style = "height : 100px;">IMAGE</div>
+          <p>
+          3D LAYER EFFECT(ANIMATED IMAGE)<br>
+          CHECK IT OUT<br>
+          ONLY VIEWABLE FOR A FEW WEEKS<br>
+          FROM <time datetime ="2021-4-1">4 April 2021</time> TO <time datetime ="2021-5-1">4 May 2021</time>
+          </p>
+        </div>
+    </div>
     </div>
 
-     <script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-    </script>
 
     <div class = "responsive">
     <div class = "gallery" style = "position : absolute; top : 150%; left: 0px;"> <a href = "https://easttennessean.com/wp-content/uploads/2018/04/art.jpg" target = "_blank">
        <div><img src = "https://easttennessean.com/wp-content/uploads/2018/04/art.jpg" alt = "Introduction to art"></div>
    </a>
-        <div class = "desc"><p>BY SHREYA<br>
+        <div class = "desc" ><p>BY SHREYA<br>
         PRICE = ₹500</p>
         </div>
     </div></div>
@@ -438,7 +476,36 @@ function showSlides(n) {
     <p class = "nandini" style = "background-color :rgb(160,219,140); border-style:hidden; position : absolute;
     top : 210%;"> This is paragraph 2</p>
 
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
 
     </body>
 </html>
