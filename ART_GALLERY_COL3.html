@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<html>
+	<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, intial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/elianto" >
+    <link href="//db.onlinewebfonts.com/c/69d83e4c4f28f156ca2e5790d0e271ab?family=Zefani+Stencil" rel="stylesheet" type="text/css"/>
+    <link rel = "stylesheet" href = "ART_GALLERY.css">
+    </head>
+    
+    <body>
+    <div class = "topnav">
+    <a href = "#">Home</a>
+    <a  href = "#">Collections</a>
+    <a   href = "#">All Artwork</a>
+    <a   href = "#">Artists</a>
+    </div>
+
+    <div class = "header"><h1>ART GALLERY</h1>
+        <span><a class = "a2" style = "position : absolute; top : 12.99%; right :90px; width : 240px; text-align :center;"  href = "https://lh6.ggpht.com/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c=s1200" target = "blank">AMAZING ART DESIGN</a></span>
+    </div>
+
+    <div class="row">
+    <div class = "column side">
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="img_woods_wide.jpg" style="width:80%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="img_5terre_wide.jpg" style="width:80%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="img_mountains_wide.jpg" style="width:80%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="img_lights_wide.jpg" style="width:80%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="img_nature_wide.jpg" style="width:80%">
+       </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="img_snow_wide.jpg" style="width:80%">
+      </div>
+
+      <a class="prev prev1" onclick="plusSlides(-1)">❮</a>
+      <a class="next next1" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container" >
+        <p id="caption"></p>
+      </div>
+
+
+        <div class="column1">
+          <img class="demo cursor" style = "position : absolute;  left : 0px;" src="img_woods_wide.jpg" onclick="currentSlide(1)"   alt="The Woods">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" style = "position : absolute;  left : 120px;" src="img_5terre_wide.jpg"  onclick="currentSlide(2)" alt="Cinque Terre">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" style = "position : absolute;  left : 240px;" src="img_mountains_wide.jpg"  onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" style = "position : absolute; left : 360px;" src="img_lights_wide.jpg"  onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" style = "position : absolute;  left : 480px;" src="img_nature_wide.jpg"  onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>
+        <div class="column1">
+          <img class="demo cursor" style = "position : absolute;  left : 600px;" src="img_snow_wide.jpg"  onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
+    <h2  style="font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;text-align:left; float : left; padding : 5px 4px; position : absolute; top : 830px; left : 230px;">Masterpieces</h2>
+     <time datetime="2021-4" style="text-align:left; float : left; padding : 5px 4px; position : absolute; top : 880px; left : 230px;">April 2021</time>
+
+    <div class = "upd-container1">
+        <div class = "upd-sbox1">
+            <p> UPDATE1</p>
+        </div>
+        <div class = "upd-bbox1">
+            <div class = "fakeimg1" style = "height : 100px;">IMAGE</div>
+          <p>
+          3D LAYER EFFECT(ANIMATED IMAGE)<br>
+          CHECK IT OUT<br>
+          ONLY VIEWABLE FOR A FEW WEEKS<br>
+          FROM <time datetime ="2021-5-1">1 May 2021</time> TO <time datetime ="2021-6-4">4 June 2021</time>
+          </p>
+        </div>
+    </div>
+    </div>
+
+
+    <div class = "upd-container2">
+      <div class = "upd-sbox2">
+          <p> UPDATE2</p>
+      </div>
+      <div class = "upd-bbox2">
+        <p>
+        PIXEL ART<br>
+        ONLY VIEWABLE FOR A FEW WEEKS<br>
+        FROM <time datetime ="2021-5-15">15 May 2021</time> TO <time datetime ="2021-5-29">29 May 2021</time>
+        </p>
+      </div>
+  </div>
+  </div>    
+
+  <hr style = "width:100%;text-align:center;size:5px;position: absolute; top: 900px;" >
+
+  <!--ADD THE COLLECTIONS CODE HERE
+<div class= "background-col">--> 
+   
+
+   <div class="main">  <!--START MAIN-->
+    <h2>COLLECTIONS</h2>
+        <div id = "myBtnContainer">
+            <button class = "btn active1" onclick ="filterSelection('all')">Show All</button>
+            <button class = "btn " onclick ="filterSelection('painting')">Painting</button>
+            <button class = "btn " onclick ="filterSelection('sketching')">Sketching</button>
+            <button class = "btn " onclick ="filterSelection('resin coaster')">Resin Coaster</button>
+        </div>
+
+    <div class="row">
+    <div class="column painting">
+      <div class="content">
+        <img src="https://i.ytimg.com/vi/7whhcFfz51Q/maxresdefault.jpg" alt="Painting" style="width:33%">
+        <h4> Faries Painting</h4>
+        <p>BY SHREYA</p>
+      </div>
+    </div>
+    <div class="column painting">
+      <div class="content">
+      <img src="https://i.pinimg.com/736x/cb/c6/62/cbc662299bd35357e519fe867444b86c.jpg"  alt="Painting" style="width:33%">
+        <h4>Sunset Painting</h4>
+        <p>BY SHREYA</p>
+      </div>
+    </div>
+    <div class="column painting">
+      <div class="content">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1f680182116175.5d139b3ba7041.jpg" alt="Painting" style="width:100%">
+        <h4>Fox Painting</h4>
+        <p>BY SHREYA</p>
+      </div>
+    </div>
+
+    <div class="column sketching">
+      <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqie8Vc-Rr39sE3DGdTck-o-d8L02BzcLfdQ&usqp=CAU" alt="sketching" style="width:100%">
+        <h4>Girl's sketching</h4>
+        <p>BY NANDINI</p>
+      </div>
+    </div>
+    <div class="column sketching">
+      <div class="content">
+      <img src="https://brightercraft.com/wp-content/uploads/2019/08/Photo-11-08-2019-1-58-47-pm.jpg" alt="sketching" style="width:100%">
+        <h4>Bird's Sketching</h4>
+        <p>BY NANDINI</p>
+      </div>
+    </div>
+    <div class="column sketching">
+      <div class="content">
+      <img src="https://images.template.net/wp-content/uploads/2017/01/18121725/Horse-Sketches.jpg" alt="sketching" style="width:100%">
+        <h4>Horse's Sketching</h4>
+        <p>BY NANDINI</p>
+      </div>
+    </div>
+
+    <div class="column resin coaster">
+      <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRa_ilJuWfnE2LneElncslboMBXYtdxDg9tg&usqp=CAU" alt="Resin Coaster" style="width:100%">
+        <h4>Space Resin Coaster</h4>
+        <p>BY NYSHA</p>
+      </div>
+    </div>
+    <div class="column resin coaster">
+      <div class="content">
+      <img src="https://cdn.shopify.com/s/files/1/0440/6044/2788/products/b2e06348-1f75-4e2d-9084-c72120e43376_510x@2x.progressive.jpg?v=1597313014" alt="Resin Coaster" style="width:100%">
+        <h4>Mauve Resin Coaster</h4>
+        <p>BY NYSHA</p>
+      </div>
+    </div>
+    <div class="column resin coaster">
+      <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQirt6I8PvOmKECAQlXW3ZCWHiD3l2bdtW6Wg&usqp=CAU" alt="Resin Coaster" style="width:100%">
+        <h4>Triangle Resin Coaster</h4>
+        <p>BY NYSHA</p>
+      </div>
+    </div>
+
+  </div>
+    
+   </div> <!--CLOSE MAIN-->
+
+   <script>
+    /*COLLECTIONS*/
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column2");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active1");
+        current[0].className = current[0].className.replace("active1", "");
+        this.className += "active1";
+      });
+    }
+    
+</script>
+ 
+ <script>
+  /*SLIDE SHOW*/ 
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active2", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active2";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+      </script>
+
+    </body>
+    
+</html>
